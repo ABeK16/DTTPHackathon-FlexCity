@@ -10,6 +10,13 @@ header {
     text-align: center;
 }
 
+footer {
+    background-color: #3498db;
+    padding: 15px;
+    color: #fff;
+    text-align: center;
+}
+
 nav {
     background-color: #2980b9;
     padding: 10px;
@@ -44,6 +51,23 @@ h2{
     margin: 10px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    position:absolute;
+    left: 15vw;
+    top: 170px;
+    width: 40vw;
+    height: 60vh;
+    background: #fff;
+    text-align: center;
+}
+
+.map {
+    position: left;
+    display: inline-flex;
+    margin-left: 970px;
+    height: 79vh;
 }
 
 /* Add more styles as needed */
