@@ -1,3 +1,4 @@
+/* Existing styles */
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
@@ -8,9 +9,9 @@ header {
     background-color: #3498db;
     color: white;
     padding: 15px;
-    text-align: center;
+text-align: center;
     display: flex;
-}
+    }
 
 nav img {
     width: 50px; /* Adjust the size of your logo */
@@ -26,6 +27,7 @@ nav {
     text-align: center;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 nav a {
@@ -70,10 +72,9 @@ section {
     width: 12px; /* Set the width of the scrollbar */
 }
 
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background-color: #007bff; /* Set the color of the scrollbar handle */
-    border-radius: 6px; /* Set the border radius of the scrollbar handle */
+.map {
+    text-align: right; /* Align text to the right */
+    /* Add width if needed, or keep it flexible */
 }
 
 /* Track */
@@ -109,6 +110,10 @@ section {
     margin-bottom: 30px;
 }
 
+.description {
+    text-align: center;
+}
+
 footer {
     position: fixed;
     bottom: 0;
@@ -119,3 +124,26 @@ footer {
     text-align: center;
     padding: 10px;
 }
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: start; /* Add this to align items to the top, if your items have different heights */
+}
+
+.featured-location {
+    /* Define the width or flex-basis if you want to specify the size of the left side content */
+    flex: 1; /* Adjust this value as needed */
+    margin-right: 20px; /* Add some margin between the content and the map */
+}
+
+.map {
+    flex: 1; /* Adjust this value as needed */
+    text-align: right;
+}
+
+.map img {
+    display: block; /* Remove default inline behavior of img */
+    max-width: 100%; /* Ensure it doesn't overflow its container */
+    height: auto; /* Maintain aspect ratio */
+}
+
